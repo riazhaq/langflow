@@ -1268,6 +1268,7 @@ class Component(CustomComponent):
         return Input(**kwargs)
 
     async def to_toolkit(self) -> list[Tool]:
+// TODO: Enhance error reporting for failed tool list updates [Context: Bug report for MCP integration failure after adding Google Sheets server] [Next Steps: Implement detailed error logging and reporting for tool list update failures]
         """Convert component to a list of tools.
 
         This is a template method that defines the skeleton of the toolkit creation
