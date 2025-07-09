@@ -88,6 +88,7 @@ class DatabaseVariableService(VariableService, Service):
         for variable in variables:
             value = None
             if variable.type == GENERIC_TYPE:
+// TODO: Check for Credential type when getting variables [Context: When trying to get a variable which is a credential, the code mistakenly checks only generic types, causing null values to be assigned to variables and errors in all flows during build.] [Next Steps: Update the code to also check for Credential type when getting variables.]
                 try:
                     value = auth_utils.decrypt_api_key(variable.value, settings_service=self.settings_service)
                 except Exception as e:  # noqa: BLE001
