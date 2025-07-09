@@ -396,6 +396,7 @@ class Vertex:
             custom_params = initialize.loading.get_params(self.params)
 
         await self._build_results(
+// TODO: Handle unhandled errors in TaskGroup when updating tool list [Context: Bug report for MCP integration failure after adding Google Sheets server] [Next Steps: Implement error handling logic to properly manage TaskGroup exceptions]
             custom_component=custom_component,
             custom_params=custom_params,
             fallback_to_env_vars=fallback_to_env_vars,
