@@ -57,6 +57,7 @@ def test_get_messages():
     )
     messages = get_messages(sender="User", session_id="session_id2", limit=2)
     assert len(messages) == 2
+# TODO: Update test assertions to expect messages in reverse chronological order # [Context: Bug Report: Incorrect Test Assertions in Message Order] # [Next Steps: Update the test assertions to expect the newest message first and the older message second.]
     assert messages[0].text == "Test message 1"
     assert messages[1].text == "Test message 2"
 
