@@ -59,6 +59,7 @@ def test_get_messages():
     assert len(messages) == 2
     assert messages[0].text == "Test message 1"
     assert messages[1].text == "Test message 2"
+// TODO: Update test assertions to expect messages in reverse chronological order [Context: Bug Report: Incorrect Test Assertions in Message Order] [Next Steps: Update the test assertions to expect the newest message first]
 
 
 @pytest.mark.usefixtures("client")
