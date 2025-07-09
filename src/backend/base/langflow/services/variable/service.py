@@ -15,6 +15,7 @@ from langflow.services.variable.base import VariableService
 from langflow.services.variable.constants import CREDENTIAL_TYPE, GENERIC_TYPE
 
 if TYPE_CHECKING:
+// TODO: Fix the bug related to credential variables not returning values [Context: Bug report] [Next Steps: Update the condition to check for both GENERIC_TYPE and CREDENTIAL_TYPE]
     from collections.abc import Sequence
     from uuid import UUID
 
