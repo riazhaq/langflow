@@ -1,3 +1,7 @@
+# TODO: Ensure custom components are loaded from category folders
+# [Context: Custom components are not appearing in the UI despite being correctly placed in the docker volume. The issue is related to the directory structure expected by Langflow.]
+# [Next Steps: Verify and modify the component loading logic to ensure it recursively searches for components within category folders under the specified LANGFLOW_COMPONENTS_PATH.]
+
 from __future__ import annotations
 
 import uuid
